@@ -5,84 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scarlet Jinhong Park - Curriculum Vitae</title>
     <style>
-        /* Basic styling for readability - you can customize this or remove it */
         body {
-            font-family: sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            margin: 40px;
+            margin: 30px;
+            color: #333;
         }
         h1, h2, h3 {
-            color: #333;
+            color: #2c3e50;
             margin-bottom: 0.5em;
         }
         h1 {
-            border-bottom: 2px solid #333;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
             padding-bottom: 0.3em;
+            font-size: 2.2em;
         }
         h2 {
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #bdc3c7;
             padding-bottom: 0.2em;
-            margin-top: 1.5em;
+            margin-top: 2em;
+            font-size: 1.5em;
+            color: #3498db;
         }
-        .contact-info p, .references p {
-            margin: 0.2em 0;
+        .contact-info {
+            text-align: center;
+            margin-bottom: 2em;
+            color: #555;
+        }
+        .contact-info p {
+            margin: 0.1em 0;
+        }
+        .orcid {
+            font-size: 0.9em;
+            color: #7f8c8d;
         }
         .section {
             margin-bottom: 1.5em;
         }
-        .entry, .publication-item {
-            margin-bottom: 1em;
+        .entry {
+            margin-bottom: 1.2em;
+            padding-left: 15px;
+            border-left: 3px solid #ecf0f1;
+        }
+        .entry:hover {
+            border-left: 3px solid #3498db;
         }
         .entry h3 {
-            font-size: 1.1em;
-            margin-bottom: 0.2em;
+            font-size: 1.2em;
+            margin-bottom: 0.1em;
+            color: #2c3e50;
         }
-        .entry .institution {
-            font-weight: bold;
-        }
-        .entry .location, .entry .dates {
+        .entry .details {
+            display: flex;
+            justify-content: space-between;
             font-style: italic;
             color: #555;
-            display: block;
+            margin-bottom: 0.3em;
+            flex-wrap: wrap;
         }
-        .entry .advisor, .entry .supervisor {
-            font-size: 0.9em;
+         .entry .institution, .entry .location {
+            font-weight: bold;
+            font-style: normal;
+         }
+        .entry .advisor, .entry .supervisor, .entry .title {
+            font-size: 0.95em;
             color: #666;
+            margin-bottom: 0.5em;
         }
         ul {
             list-style-type: disc;
             margin-left: 20px;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 0.6em;
         }
         .publication-list li, .presentation-list li, .talk-list li {
-            margin-bottom: 0.5em;
+            margin-bottom: 0.7em;
+        }
+        .pmid-doi {
+            font-size: 0.9em;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .in-progress {
+            font-style: italic;
+            color: #888;
         }
         .skills-section ul {
             list-style-type: none;
             padding-left: 0;
         }
          .skills-section > ul > li {
-            margin-bottom: 0.8em;
+            margin-bottom: 1em;
+            font-weight: bold;
          }
         .skills-section ul ul {
             list-style-type: disc;
             margin-left: 25px;
+            font-weight: normal;
         }
-        strong {
-            font-weight: bold;
+        .references .entry {
+             border-left: none;
+             padding-left: 0;
         }
-        .orcid {
-            font-size: 0.9em;
-            color: #777;
+        .references h3 {
+            font-size: 1.1em;
         }
-        .pmid-doi {
-            font-size: 0.9em;
-            color: #007bff; /* Example link color */
+        .references p {
+            margin: 0.1em 0;
+        }
+        a {
+            color: #3498db;
             text-decoration: none;
         }
-        .in-progress {
-            font-style: italic;
-            color: #888;
+        a:hover {
+            text-decoration: underline;
         }
+        .skills-summary {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 2em;
+        }
+        .skills-summary h3 {
+            margin-top: 0;
+            color: #3498db;
+        }
+
     </style>
 </head>
 <body>
@@ -90,69 +142,103 @@
     <header>
         <h1>SCARLET JINHONG PARK</h1>
         <div class="contact-info">
-            <p class="orcid">(ORCID ID: 0000-0002-1545-6284) [cite: 1]</p>
-            <p>+1 (507) 581-3620</p>
-            <p><a href="mailto:scarlet.jinhong.park@gmail.com">scarlet.jinhong.park@gmail.com</a> [cite: 1]</p>
+            <p class="orcid">(ORCID ID: 0000-0002-1545-6284)</p>
+            <p>📞 +1 (507) 581-3620</p>
+            <p>📧 <a href="mailto:scarlet.jinhong.park@gmail.com">scarlet.jinhong.park@gmail.com</a></p>
         </div>
     </header>
+
+    <section class="section skills-summary">
+        <h2>Relevant Skills</h2>
+        <div>
+            <h3>Technical Skills:</h3>
+            <ul>
+                <li><strong>Statistics:</strong> Descriptive, Analytical, Modeling (e.g., regression), Visualization [cite: 2]</li>
+                <li><strong>Software:</strong> R, MATLAB, SPSS, Prism, Excel, Python [cite: 2]</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Laboratory Skills:</h3>
+            <ul>
+                <li><strong>Molecular Biology:</strong> (See detailed skills section) [cite: 2]</li>
+                <li><strong>Model Organisms:</strong> (See detailed skills section) [cite: 2]</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Research Skills:</h3>
+            <ul>
+                <li>Experimental design, data analysis, scientific writing, literature review, data interpretation [cite: 2]</li>
+                <li>Assay development, drug screening [cite: 2]</li>
+            </ul>
+        </div>
+    </section>
+
 
     <section class="section">
         <h2>EDUCATION AND TRAINING</h2>
         <div class="entry">
             <h3>Bachelor of Arts (Magna Cum Laude)</h3>
-            <span class="institution">Carleton College</span>, <span class="location">Northfield, MN</span>
-            <span class="dates">Sep 2011 – Jun 2015</span>
-            <p>Major: Psychology (Distinction) / Concentration: Neuroscience [cite: 3]</p>
+            <div class="details">
+                <div><span class="institution">Carleton College</span>, <span class="location">Northfield, MN</span></div>
+                <span class="dates">Sep 2011 – Jun 2015</span>
+            </div>
+            <p>Major: Psychology (Distinction) / Concentration: Neuroscience [cite: 2]</p>
         </div>
         <div class="entry">
             <h3>Doctor of Philosophy</h3>
-            <span class="institution">The Scripps Research Institute, Florida</span>, <span class="location">Jupiter, FL</span>
-            <span class="dates">Aug 2016 – Aug 2023</span>
-            <p class="advisor">Advisor: William W. Ja, Ph. D. [cite: 3]</p>
+            <div class="details">
+                 <div><span class="institution">The Scripps Research Institute, Florida</span>, <span class="location">Jupiter, FL</span></div>
+                 <span class="dates">Aug 2016 – Aug 2023</span>
+            </div>
+            <p class="advisor">Advisor: William W. Ja, Ph. D. [cite: 2]</p>
         </div>
          <div class="entry">
             <h3>Postdoctoral Research Associate</h3>
-            <span class="institution">Wertheim UF Scripps Institute</span>, <span class="location">Jupiter, FL</span>
-            <span class="dates">Aug 2023 – Present</span>
-            <p class="advisor">Advisor: William W. Ja, Ph. D. [cite: 3]</p>
+            <div class="details">
+                <div><span class="institution">Wertheim UF Scripps Institute</span>, <span class="location">Jupiter, FL</span></div>
+                <span class="dates">Aug 2023 – Present</span>
+            </div>
+            <p class="advisor">Advisor: William W. Ja, Ph. D. [cite: 2]</p>
         </div>
          <div class="entry">
             <h3>Research Associate Scientist / Lab Head</h3>
-            <span class="institution">Nova Southeastern University</span>, <span class="location">Palm Beach Gardens, FL</span>
-            <span class="dates">Dec 2023 – Present</span>
-            <p class="supervisor">Supervisor: Ken Dawson-Scully, Ph. D. [cite: 3]</p>
+             <div class="details">
+                <div><span class="institution">Nova Southeastern University</span>, <span class="location">Palm Beach Gardens, FL</span></div>
+                <span class="dates">Dec 2023 – Present</span>
+             </div>
+            <p class="supervisor">Supervisor: Ken Dawson-Scully, Ph. D. [cite: 2]</p>
         </div>
     </section>
 
     <section class="section">
         <h2>PUBLICATIONS</h2>
         <ul class="publication-list">
-            <li>Shirasu-Hiza M, (...), <strong>Park SJ</strong>, (...) (2024) Neuronal knockdown of Cullin3 as a Drosophila model of autism spectrum disorder. <em>Scientific Reports</em> <span class="pmid-doi">[PMID: 38233464]</span> [cite: 4, 5]</li>
-            <li><strong>Park SJ</strong>, Ja WW (2023) FEEDING BEHAVIOR: The Basics of Base Sensing. <em>Nat Metab</em> <span class="pmid-doi">[PMID:36941449]</span> [cite: 5, 6]</li>
-            <li>Ulgherait M, (...), <strong>Park SJ</strong>, (...) Shirasu-Hiza M (2021) Circadian Autophagy Drives iTRF-mediated Longevity. <em>Nature</em> <span class="pmid-doi">[PMID:34588695]</span> [cite: 6, 7]</li>
-            <li>Wu Q, <strong>Park SJ</strong>, (...), Ja WW (2021) Vitamin preference in Drosophila. <em>Curr Biol</em> <span class="pmid-doi">[PMID: 34375595]</span> [cite: 7, 8]</li>
-            <li>Botero V, (...), <strong>Park SJ</strong>, (...), Tomchik SM (2021) Neurofibromin regulates metabolic rate via neuronal mechanisms in Drosophila. <em>Nat Commun</em> <span class="pmid-doi">[PMID: 34257279]</span> [cite: 8, 9]</li>
-            <li><strong>Park SJ</strong>, Ja WW (2020) Absolute ethanol intake predicts ethanol preference in Drosophila. <em>J Exp Biol</em> <span class="pmid-doi">[PMID: 32366685]</span> [cite: 9, 10]</li>
-            <li>Wang QP, (...), <strong>Park SJ</strong>, (...), Neely GG (2020) PGC1α Controls Sucrose Taste Sensitization in Drosophila. <em>Cell Rep</em> <span class="pmid-doi">[PMID: 32268099]</span> [cite: 10, 11]</li>
-            <li>Wu Q, (...), <strong>Park SJ</strong>, (...), Yang M (2020) Excreta quantification (EX-Q) for measuring longitudinal accumulation of food intake in Drosophila. <em>iScience</em> <span class="pmid-doi">[PMID: 31901635]</span> [cite: 11, 12]</li>
-            <li>Chen YD, <strong>Park SJ</strong>, (...), Dahanukar AA (2019) Combinatorial pharyngeal taste coding for feeding avoidance in adult Drosophila. <em>Cell Rep</em> <span class="pmid-doi">[PMID: 31644916]</span> [cite: 12, 13]</li>
-            <li>Chen YD, <strong>Park SJ</strong>, Ja WW, Dahanukar A (2018) Using Pox-neuro (Poxn) mutants in Drosophila gustation research: a double-edged sword. <em>Front Cell Neurosci</em> <span class="pmid-doi">[PMID: 30405359]</span> [cite: 13, 14]</li>
-            <li>Grim T, <strong>Park SJ</strong>, (...), Bohn, LM (2018) The effect of quinine in two bottle choice procedures in C57BL6 mice: opioid preference, somatic withdrawal, and pharmacokinetic outcomes. <em>Drug Alcohol Depend</em> <span class="pmid-doi">[PMID: 30138791]</span> [cite: 14, 15]</li>
-            <li>Keebaugh ES, <strong>Park JH</strong>, (...), Ja WW (2017) Nutrition influences caffeine-mediated sleep loss in Drosophila. <em>Sleep</em> <span class="pmid-doi">[PMID: 29029291]</span> [cite: 15, 16]</li>
-            <li>Murphy KR, (...), <strong>Park JH</strong>, Ja WW (2017) Simultaneous measurement of sleep and feeding in individual Drosophila. <em>Nat Protoc</em> <span class="pmid-doi">[PMID: 29022943]</span> [cite: 16, 17]</li>
-            <li>Lee GY, (...), <strong>Park JH</strong>, (...), Treasure J (2018) Feasibility and acceptability of a prevention program for eating disorders (Me, You, and Us) adapted for young adolescents in Korea. <em>Eat Weight Disord</em> <span class="pmid-doi">[PMID: 28871526]</span> [cite: 17, 18]</li>
-            <li><strong>Park JH</strong>, (...), Ja WW (2017) Sucralose suppresses food intake. <em>Cell Metab</em> <span class="pmid-doi">[PMID: 28273467]</span> [cite: 18, 19]</li>
-            <li>Meerts SH, <strong>Park JH</strong>, Sekhawat R (2016) Sexual experience modulates partner preference and mPOA nitric oxide synthase in female rats. <em>Behav Neurosci</em> <span class="pmid-doi">[PMID: 27657310]</span> [cite: 19, 20]</li>
-            <li>Cardi V, (...), <strong>Park J</strong>, (...), Treasure J (2015) Self Help and Recovery guide for Eating Disorders (SHARED): study protocol for a randomized controlled trial. <em>Trials</em> <span class="pmid-doi">[PMID: 2588597]</span> [cite: 20, 21]</li>
-            <li>Kim YR, Kim CH, <strong>Park JH</strong>, Pyo J, Treasure J (2014) The impact of intranasal oxytocin on attention to social emotional stimuli in patients with anorexia nervosa: a double blind within-subject cross-over experiment. <em>PLoS One</em> <span class="pmid-doi">[PMID: 24603863]</span> [cite: 21, 22]</li>
-            <li>Bou Mansour C, (...), <strong>Park JH</strong>, Van Der Wege M (2021) Familiarity breeds overconfidence: group membership and shared experience in the closeness-communication bias. <em>J Exp Soc Psychol</em> <span class="pmid-doi">[DOI]</span> [cite: 22, 23]</li>
+            <li>Shirasu-Hiza M, (...), <strong>Park SJ</strong>, (...) (2024) Neuronal knockdown of Cullin3 as a Drosophila model of autism spectrum disorder. <em>Scientific Reports</em> <span class="pmid-doi">[PMID: 38233464]</span> [cite: 2, 3, 4]</li>
+            <li><strong>Park SJ</strong>, Ja WW (2023) FEEDING BEHAVIOR: The Basics of Base Sensing. <em>Nat Metab</em> <span class="pmid-doi">[PMID:36941449]</span> [cite: 5]</li>
+            <li>Ulgherait M, (...), <strong>Park SJ</strong>, (...) Shirasu-Hiza M (2021) Circadian Autophagy Drives iTRF-mediated Longevity. <em>Nature</em> <span class="pmid-doi">[PMID:34588695]</span> [cite: 6]</li>
+            <li>Wu Q, <strong>Park SJ</strong>, (...), Ja WW (2021) Vitamin preference in Drosophila. <em>Curr Biol</em> <span class="pmid-doi">[PMID: 34375595]</span> [cite: 6]</li>
+            <li>Botero V, (...), <strong>Park SJ</strong>, (...), Tomchik SM (2021) Neurofibromin regulates metabolic rate via neuronal mechanisms in Drosophila. <em>Nat Commun</em> <span class="pmid-doi">[PMID: 34257279]</span> [cite: 7, 8]</li>
+            <li><strong>Park SJ</strong>, Ja WW (2020) Absolute ethanol intake predicts ethanol preference in Drosophila. <em>J Exp Biol</em> <span class="pmid-doi">[PMID: 32366685]</span> [cite: 9]</li>
+            <li>Wang QP, (...), <strong>Park SJ</strong>, (...), Neely GG (2020) PGC1α Controls Sucrose Taste Sensitization in Drosophila. <em>Cell Rep</em> <span class="pmid-doi">[PMID: 32268099]</span> [cite: 10]</li>
+            <li>Wu Q, (...), <strong>Park SJ</strong>, (...), Yang M (2020) Excreta quantification (EX-Q) for measuring longitudinal accumulation of food intake in Drosophila. <em>iScience</em> <span class="pmid-doi">[PMID: 31901635]</span> [cite: 10, 11]</li>
+            <li>Chen YD, <strong>Park SJ</strong>, (...), Dahanukar AA (2019) Combinatorial pharyngeal taste coding for feeding avoidance in adult Drosophila. <em>Cell Rep</em> <span class="pmid-doi">[PMID: 31644916]</span> [cite: 12]</li>
+            <li>Chen YD, <strong>Park SJ</strong>, Ja WW, Dahanukar A (2018) Using Pox-neuro (Poxn) mutants in Drosophila gustation research: a double-edged sword. <em>Front Cell Neurosci</em> <span class="pmid-doi">[PMID: 30405359]</span> [cite: 13]</li>
+            <li>Grim T, <strong>Park SJ</strong>, (...), Bohn, LM (2018) The effect of quinine in two bottle choice procedures in C57BL6 mice: opioid preference, somatic withdrawal, and pharmacokinetic outcomes. <em>Drug Alcohol Depend</em> <span class="pmid-doi">[PMID: 30138791]</span> [cite: 14]</li>
+            <li>Keebaugh ES, <strong>Park JH</strong>, (...), Ja WW (2017) Nutrition influences caffeine-mediated sleep loss in Drosophila. <em>Sleep</em> <span class="pmid-doi">[PMID: 29029291]</span> [cite: 15]</li>
+            <li>Murphy KR, (...), <strong>Park JH</strong>, Ja WW (2017) Simultaneous measurement of sleep and feeding in individual Drosophila. <em>Nat Protoc</em> <span class="pmid-doi">[PMID: 29022943]</span> [cite: 16]</li>
+            <li>Lee GY, (...), <strong>Park JH</strong>, (...), Treasure J (2018) Feasibility and acceptability of a prevention program for eating disorders (Me, You, and Us) adapted for young adolescents in Korea. <em>Eat Weight Disord</em> <span class="pmid-doi">[PMID: 28871526]</span> [cite: 17]</li>
+            <li><strong>Park JH</strong>, (...), Ja WW (2017) Sucralose suppresses food intake. <em>Cell Metab</em> <span class="pmid-doi">[PMID: 28273467]</span> [cite: 18]</li>
+            <li>Meerts SH, <strong>Park JH</strong>, Sekhawat R (2016) Sexual experience modulates partner preference and mPOA nitric oxide synthase in female rats. <em>Behav Neurosci</em> <span class="pmid-doi">[PMID: 27657310]</span> [cite: 19]</li>
+            <li>Cardi V, (...), <strong>Park J</strong>, (...), Treasure J (2015) Self Help and Recovery guide for Eating Disorders (SHARED): study protocol for a randomized controlled trial. <em>Trials</em> <span class="pmid-doi">[PMID: 2588597]</span> [cite: 20]</li>
+            <li>Kim YR, Kim CH, <strong>Park JH</strong>, Pyo J, Treasure J (2014) The impact of intranasal oxytocin on attention to social emotional stimuli in patients with anorexia nervosa: a double blind within-subject cross-over experiment. <em>PLoS One</em> <span class="pmid-doi">[PMID: 24603863]</span> [cite: 21]</li>
+            <li>Bou Mansour C, (...), <strong>Park JH</strong>, Van Der Wege M (2021) Familiarity breeds overconfidence: group membership and shared experience in the closeness-communication bias. <em>J Exp Soc Psychol</em> <span class="pmid-doi">[DOI]</span> [cite: 22]</li>
         </ul>
 
         <h3>Manuscripts in Progress</h3>
         <ul class="publication-list">
-            <li><strong>Park SJ*</strong>, Murphy KR*, Ja WW <span class="in-progress">(in revision)</span> Energy Deficit is a Key Driver of Sleep Homeostasis. <em>bioRxiv</em> <span class="pmid-doi">[DOI]</span></li>
-            <li>Gonzalez-Lerma P, Lloyd C, <strong>Park SJ</strong>, Dawson-Scully K, <span class="in-progress">(in review)</span> Anticonvulsant effects of novel and repurposed drugs on docetaxel-induced neuropathy in C. elegans.</li>
-            <li><strong>Park SJ</strong>, (...), Ja WW <span class="in-progress">(in submission)</span> Caloric restriction-mediated lifespan extension is associated with positive energy balance.</li>
+            <li><strong>Park SJ*</strong>, Murphy KR*, Ja WW <span class="in-progress">(in revision)</span> Energy Deficit is a Key Driver of Sleep Homeostasis. <em>bioRxiv</em> <span class="pmid-doi">[DOI]</span> [cite: 22]</li>
+            <li>Gonzalez-Lerma P, Lloyd C, <strong>Park SJ</strong>, Dawson-Scully K, <span class="in-progress">(in review)</span> Anticonvulsant effects of novel and repurposed drugs on docetaxel-induced neuropathy in C. elegans. [cite: 22]</li>
+            <li><strong>Park SJ</strong>, (...), Ja WW <span class="in-progress">(in submission)</span> Caloric restriction-mediated lifespan extension is associated with positive energy balance. [cite: 23]</li>
             <li><strong>Park SJ</strong>, Ja WW. <span class="in-progress">(in progress)</span> Taste-mediated suppression of sucrose intake in Drosophila melanogaster. [cite: 24]</li>
             <li><strong>Park SJ*</strong>, Murphy KR*, (...), Ja WW <span class="in-progress">(in progress)</span> Neuronal regulation of meal size in Drosophila. [cite: 25]</li>
         </ul>
@@ -161,26 +247,26 @@
     <section class="section">
         <h2>CONFERENCE POSTER PRESENTATIONS</h2>
         <ul class="presentation-list">
-            <li><strong>Park SJ</strong>, Ja WW (2024, November). <em>Pharyngeal Suppression of Food Intake by Nutrient Quality in Drosophila melanogaster</em>. HHMI-Janelia Sensory Biology of Ingestion: Integrating the Internal and External Worlds. [cite: 26, 27]</li>
+            <li><strong>Park SJ</strong>, Ja WW (2024, November). <em>Pharyngeal Suppression of Food Intake by Nutrient Quality in Drosophila melanogaster</em>. HHMI-Janelia Sensory Biology of Ingestion: Integrating the Internal and External Worlds. [cite: 26]</li>
             <li><strong>Park SJ</strong>, Ja WW (2023, July). <em>Marshmallow test for flies: Suppression of low-quality food consumption in Drosophila melanogaster</em>. International Behavioral Neuroscience Society. [cite: 27, 28]</li>
             <li><strong>Park SJ</strong>, Keebaugh ES, Ja WW (2019, October). <em>Total food consumption predicts behavioral changes from pharmacological, dietary, and genetic manipulations</em>. Cold Spring Harbor Laboratory Neurobiology of Drosophila. [cite: 29, 30]</li>
-            <li><strong>Park JH</strong>, Murphy KR, Huber R, Ja WW. (2017, October). <em>Simultaneous, real-time measurements of motion and feeding in individual flies</em>. Cold Spring Harbor Laboratory Neurobiology of Drosophila. [cite: 30, 31]</li>
+            <li><strong>Park JH</strong>, Murphy KR, Huber R, Ja WW. (2017, October). <em>Simultaneous, real-time measurements of motion and feeding in individual flies</em>. Cold Spring Harbor Laboratory Neurobiology of Drosophila. [cite: 31]</li>
             <li>Bachman R, <strong>Park JH</strong>, Sekhawat R, Meerts SM. (2015, April-June). <em>Sexual experience moderates partner preference in female rats</em>. Annual Meeting of the Society for Behavioral Neuroendocrinology, Minnesota Undergraduate Psychology Conference. [cite: 32, 33]</li>
-            <li><strong>Park JH</strong> (2015, April). <em>Estrogen is necessary for the development of activity-based anorexia</em>. Minnesota Undergraduate Psychology Conference. [cite: 33, 34]</li>
+            <li><strong>Park JH</strong> (2015, April). <em>Estrogen is necessary for the development of activity-based anorexia</em>. Minnesota Undergraduate Psychology Conference. [cite: 34]</li>
             <li>Van Der Wege M, Mansour CB, (...), <strong>Park J</strong>, (...) (2014, November). <em>Does the closeness-communication bias extend to group membership?</em> Annual Meeting of the Psychonomics Society. [cite: 35, 36]</li>
-            <li>Kim Y, Seong Y, <strong>Park J</strong>, Pyo J, Treasure J. (2014, March). <em>Intranasal oxytocin attenuates attentional bias for eating and shape stimuli in patients with anorexia nervosa</em>. International Conference of Eating Disorders. [cite: 37, 38, 39]</li>
+            <li>Kim Y, Seong Y, <strong>Park J</strong>, Pyo J, Treasure J. (2014, March). <em>Intranasal oxytocin attenuates attentional bias for eating and shape stimuli in patients with anorexia nervosa</em>. International Conference of Eating Disorders. [cite: 37, 38]</li>
         </ul>
     </section>
 
-    <section class="section">
+     <section class="section">
         <h2>TALKS</h2>
         <ul class="talk-list">
-            <li>“Marshmallow test for flies: Suppression of feeding based on dietary quality in D. melanogaster” Seminar for Joint Drosophila Group Meeting, Indiana University Bloomington (September 2022)</li>
-            <li>“Goldi-Fly and its search for the ‘sweet spot’ of sugar intake” Invited talk for Neuroscience Capstone Seminar, Carleton College, MN (April 2021)</li>
-            <li>“Sweet taste and nutrients independently suppress food intake” Neuroscience Department Research Meeting, The Scripps Research Institute, FL (February 2020)</li>
-            <li>“What makes a meal? Defining meals from bouts and identifying regulators of meal size” Neural Circuits and Behavior I Platform Session, 60th Annual Drosophila Research Conference (March 2019) and 2019 Flies on the Beach (April 2019). [cite: 40]</li>
-            <li>“The Effect of Artificial Sweeteners on Food Intake in Drosophila” Neuroscience Department Research Meeting, The Scripps Research Institute, FL (May 2017) [cite: 41]</li>
-            <li>“What Can Rats Tell Us About Anorexia Nervosa?” Nominated talk delivered at the 2015 Reception of the Sigma Xi Carleton College Chapter (May 2015) [cite: 42]</li>
+            <li>“Marshmallow test for flies: Suppression of feeding based on dietary quality in D. melanogaster” Seminar for Joint Drosophila Group Meeting, Indiana University Bloomington (September 2022) [cite: 39]</li>
+            <li>“Goldi-Fly and its search for the ‘sweet spot’ of sugar intake” Invited talk for Neuroscience Capstone Seminar, Carleton College, MN (April 2021) [cite: 39]</li>
+            <li>“Sweet taste and nutrients independently suppress food intake” Neuroscience Department Research Meeting, The Scripps Research Institute, FL (February 2020) [cite: 39]</li>
+            <li>“What makes a meal? Defining meals from bouts and identifying regulators of meal size” Neural Circuits and Behavior I Platform Session, 60<sup>th</sup> Annual Drosophila Research Conference (March 2019) and 2019 Flies on the Beach (April 2019). [cite: 39]</li>
+            <li>“The Effect of Artificial Sweeteners on Food Intake in Drosophila” Neuroscience Department Research Meeting, The Scripps Research Institute, FL (May 2017) [cite: 40]</li>
+            <li>“What Can Rats Tell Us About Anorexia Nervosa?” Nominated talk delivered at the 2015 Reception of the Sigma Xi Carleton College Chapter (May 2015) [cite: 40, 41]</li>
         </ul>
     </section>
 
@@ -188,23 +274,27 @@
         <h2>RESEARCH EXPERIENCE</h2>
         <div class="entry">
             <h3>Postdoctoral Associate / Lead Scientist</h3>
-            <span class="institution">Nova Southeastern University</span>, <span class="location">Palm Beach Gardens, FL</span>
-            <span class="dates">Dec 2023 – Present</span>
-            <p class="supervisor">PI: Ken Dawson-Scully, PhD</p>
+             <div class="details">
+                 <div><span class="institution">Nova Southeastern University</span>, <span class="location">Palm Beach Gardens, FL</span></div>
+                 <span class="dates">Dec 2023 – Present</span>
+             </div>
+            <p class="supervisor">PI: Ken Dawson-Scully, PhD [cite: 41]</p>
             <ul>
-                <li>Screened novel and FDA-approved molecules for possible anticonvulsant activities in C. elegans. [cite: 42]</li>
-                <li>Initiated a successful application for funding through Epilepsy Therapy Screening Program (ETSP). [cite: 43]</li>
-                <li>Coordinated a collaboration with a Drosophila lab at UF Scripps to investigate the pathway by which the drugs extend healthspan and lifespan. [cite: 44]</li>
-                <li>Advised two graduate students through defense and publications. Submitted a full R16 grant to NIH for establishing a high-throughput platform for screening anticonvulsants. [cite: 45]</li>
-                <li>Mentored two graduate students, eight internal undergraduate students, one external undergraduate student, and five local high school students. [cite: 46]</li>
+                <li>Screened novel and FDA-approved molecules for possible anticonvulsant activities in C. elegans. [cite: 41]</li>
+                <li>Initiated a successful application for funding through Epilepsy Therapy Screening Program (ETSP). [cite: 42]</li>
+                <li>Coordinated a collaboration with a Drosophila lab at UF Scripps to investigate the pathway by which the drugs extend healthspan and lifespan. [cite: 43]</li>
+                <li>Advised two graduate students through defense and publications. Submitted a full R16 grant to NIH for establishing a high-throughput platform for screening anticonvulsants. [cite: 44]</li>
+                <li>Mentored two graduate students, eight internal undergraduate students, one external undergraduate student, and five local high school students. [cite: 45]</li>
             </ul>
         </div>
         <div class="entry">
             <h3>Graduate Student, Postdoctoral Associate</h3>
-            <span class="institution">The Scripps Research Institute</span>, <span class="location">Jupiter, FL</span>
-            <span class="dates">Aug 2016 – Present</span>
-            <p class="supervisor">PI: William W. Ja, PhD</p>
-            <p>Title: Taste-mediated suppression of sugar intake in Drosophila melanogaster [cite: 47]</p>
+            <div class="details">
+                <div><span class="institution">The Scripps Research Institute</span>, <span class="location">Jupiter, FL</span></div>
+                <span class="dates">Aug 2016 – Aug 2023 (PhD), Present (Postdoc)</span>
+            </div>
+            <p class="supervisor">PI: William W. Ja, PhD [cite: 46]</p>
+            <p class="title">Title: Taste-mediated suppression of sugar intake in Drosophila melanogaster [cite: 46]</p>
             <ul>
                 <li>Studied how peripheral taste and internal state modulates different subcomponents of feeding behavior in Drosophila melanogaster. [cite: 47]</li>
                 <li>Combined genetic and behavioral approach to effectively screen for neuronal and genetic modulators of food intake control in a concentration-specific manner. [cite: 48]</li>
@@ -215,97 +305,64 @@
         </div>
         <div class="entry">
             <h3>Research Assistant / Lab Technician</h3>
-            <span class="institution">Dartmouth College / Geisel School of Medicine</span>, <span class="location">Hanover, NH / Lebanon, NH</span>
-            <span class="dates">Aug 2015 – June 2016</span>
-            <p class="supervisor">PIs: David Bucci, PhD / Bryan Luikart, PhD</p>
+            <div class="details">
+                <div><span class="institution">Dartmouth College / Geisel School of Medicine</span>, <span class="location">Hanover, NH / Lebanon, NH</span></div>
+                <span class="dates">Aug 2015 – June 2016</span>
+            </div>
+            <p class="supervisor">PIs: David Bucci, PhD / Bryan Luikart, PhD [cite: 52]</p>
             <ul>
                 <li>Studied non-pathological age-related memory loss in mice and the genes involved, translating genetic findings in Drosophila to mammalian models. [cite: 52]</li>
                 <li>Worked in two collaborating labs, developing behavioral assays and testing mice with Dr. Bucci. [cite: 53]</li>
-                <li>Knocked out various genes in mice using CRISPR/Cas9 and observed morphological changes with Dr. Luikart. [cite: 54]</li>
-                <li>Mentored three undergraduate students. [cite: 55]</li>
+                <li>Knocked out various genes (ex. Dtnbp-1, Pten, Ncaph-2) in mice using the CRISPR/Cas9 technology and observed morphological changes with Dr. Luikart. [cite: 54]</li>
+                <li>Mentored three undergraduate students, one of which is pursuing an academic career. [cite: 55]</li>
             </ul>
         </div>
         <div class="entry">
             <h3>Senior Integrative Exercise</h3>
-            <span class="institution">Carleton College</span>, <span class="location">Northfield, MN</span>
-            <span class="dates">Aug 2014 – Mar 2015</span>
-            <p class="supervisor">Advisors: Sarah Meerts, PhD, Lawrence Wichlinski, PhD</p>
-            <p>Title: “What Triggers Activity-Based Anorexia? An Investigation of the Interaction Between Diet Restriction and Activity and the Necessity of Gonadal Hormones”</p>
+            <div class="details">
+                <div><span class="institution">Carleton College</span>, <span class="location">Northfield, MN</span></div>
+                <span class="dates">Aug 2014 – Mar 2015</span>
+            </div>
+            <p class="supervisor">Advisors: Sarah Meerts, PhD, Lawrence Wichlinski, PhD [cite: 56]</p>
+            <p class="title">Title: “What Triggers Activity-Based Anorexia? An Investigation of the Interaction Between Diet Restriction and Activity and the Necessity of Gonadal Hormones” [cite: 56]</p>
             <ul>
-                <li>Studied activity-based anorexia in rodents, focusing on diet restriction, activity, and hormonal effects. [cite: 56]</li>
-                <li>Received distinction and presented results. [cite: 57]</li>
+                <li>Studied the individual effects of diet restriction and running wheel activity on the progression of activity-based anorexia. [cite: 56]</li>
+                <li>Received distinction for the project and presented the results at 2015 Minnesota Undergraduate Psychology Conference. [cite: 57]</li>
             </ul>
         </div>
-        <div class="entry">
-            <h3>Research Assistant</h3>
-            <span class="institution">Behavioral Neuroendocrinology Lab, Carleton College</span>
-            <span class="dates">Aug 2014 – June 2015</span>
-            <p class="supervisor">PI: Sarah Meerts, PhD</p>
-            <ul>
-                <li>Studied mating experience effects on female rat preferences and brain expression patterns. [cite: 58]</li>
-                <li>Research presented at conferences and published in <em>Behavioral Neuroscience</em>. [cite: 59, 60]</li>
-            </ul>
-        </div>
-        <div class="entry">
-            <h3>Research Assistant</h3>
-            <span class="institution">Language and Cognition Research Lab, Carleton College</span>
-            <span class="dates">Mar 2014 – June 2015</span>
-            <p class="supervisor">PI: Mija van der Wege, PhD</p>
-            <ul>
-                <li>Studied how perceived in-group status affects common ground estimation. [cite: 61]</li>
-                <li>Research presented at conferences and published in <em>Journal of Experimental Social Psychology</em>. [cite: 62, 63]</li>
-            </ul>
-        </div>
-         <div class="entry">
-            <h3>Research Assistant</h3>
-            <span class="institution">King’s College London, Eating Disorders Research Lab</span>, <span class="location">London, UK</span>
-            <span class="dates">Jun – Aug 2014</span>
-            <p class="supervisor">PI: Janet Treasure, OBE, PhD, FRCP, FRPsych</p>
-            <ul>
-                <li>Devised a self-help workbook and videos for patients with eating disorders. [cite: 63]</li>
-                <li>Protocol published in <em>Trials</em>. [cite: 64]</li>
-            </ul>
-        </div>
-        <div class="entry">
-            <h3>Research Assistant</h3>
-            <span class="institution">Inje University Paik Hospital, Eating Disorders Research Lab</span>, <span class="location">Seoul, South Korea</span>
-            <span class="dates">Jun 2013 – Aug 2014</span>
-            <p class="supervisor">PI: Youlri Kim, MD</p>
-            <ul>
-                <li>Studied the clinical feasibility of intranasal oxytocin for eating disorder patients. [cite: 65]</li>
-                <li>Found oxytocin alleviates abnormal attention towards specific visual cues. [cite: 66]</li>
-                <li>Research published in <em>PloS One</em>; assisted with prevention program. [cite: 67, 68]</li>
-            </ul>
-        </div>
-    </section>
+         </section>
 
     <section class="section">
         <h2>TEACHING EXPERIENCE</h2>
         <div class="entry">
             <h3>Teaching Assistant - Neurobiology of Alcohol and Drug Addiction (NEURO550)</h3>
-            <span class="institution">The Scripps Research Institute</span>
-            <span class="dates">FA 2020, FA 2022</span>
-            <p class="supervisor">Course Directors: Eric Zorrilla, PhD; Barbara Mason, PhD [cite: 69]</p>
+            <div class="details">
+                <div><span class="institution">The Scripps Research Institute</span></div>
+                <span class="dates">FA 2020, FA 2022</span>
+            </div>
+            <p class="supervisor">Course Directors: Eric Zorrilla, PhD; Barbara Mason, PhD [cite: 67, 68]</p>
             <ul>
-                <li>Assisted in a graduate-level course on addiction neurobiology. [cite: 69]</li>
-                <li>Advised on course materials and student engagement. [cite: 70]</li>
-                <li>Presented on course challenges and successes. [cite: 71]</li>
-                <li>Managed course logistics and Canvas. [cite: 72]</li>
-                <li>Facilitated discussion sections. [cite: 72]</li>
-                <li>Graded assignments and provided feedback. [cite: 73]</li>
-                <li>Produced supplemental materials. [cite: 74]</li>
+                <li>Served as a teaching assistant for a graduate-level course on addiction neurobiology. [cite: 68]</li>
+                <li>Advised course directors on materials and student engagement. [cite: 69]</li>
+                <li>Presented course challenges and successes. [cite: 70]</li>
+                <li>Managed course logistics via Canvas. [cite: 71]</li>
+                <li>Facilitated small-group discussions. [cite: 71]</li>
+                <li>Graded assignments and provided feedback. [cite: 72]</li>
+                <li>Produced supplemental materials. [cite: 73]</li>
             </ul>
         </div>
          <div class="entry">
             <h3>Teaching Assistant - Introduction to Biostatistics (TRBIO420)</h3>
-            <span class="institution">The Scripps Research Institute</span>
-            <span class="dates">WI 2019</span>
-            <p class="supervisor">Course Directors: Jill Waalen, MD, MS, MPH, FACPM [cite: 75]</p>
+            <div class="details">
+                <div><span class="institution">The Scripps Research Institute</span></div>
+                <span class="dates">WI 2019</span>
+            </div>
+            <p class="supervisor">Course Directors: Jill Waalen, MD, MS, MPH, FACPM [cite: 74]</p>
             <ul>
-                <li>Assisted in a graduate-level biostatistics course. [cite: 76]</li>
-                <li>Provided individual feedback to students. [cite: 76]</li>
-                <li>Graded problem sets using R and exam questions. [cite: 77]</li>
-                <li>Managed course logistics via Canvas. [cite: 78]</li>
+                <li>Assisted in a graduate-level biostatistics course. [cite: 74]</li>
+                <li>Provided individual feedback. [cite: 75]</li>
+                <li>Graded R-based problem sets and exams. [cite: 76]</li>
+                <li>Managed course logistics via Canvas. [cite: 77]</li>
             </ul>
         </div>
     </section>
@@ -313,106 +370,106 @@
     <section class="section">
         <h2>AWARDS AND SCHOLARSHIPS</h2>
         <ul>
-            <li>Robert M. Sandelman Awards for Scientific Excellence (2019)</li>
-            <li>Farris Foundation Graduate Student Fellowship (2019)</li>
-            <li>DeVos Professional Development Award (2017)</li>
-            <li>Phi Beta Kappa Carleton College Chapter (2015)</li>
-            <li>Sigma Xi Carleton College Chapter (2015)</li>
-            <li>Annual Dean’s List (Carleton College) (2012 - 2013)</li>
-            <li>Dean’s Office Research Scholarship (Carleton College) (Mar, Nov 2014; Jun 2015) [cite: 79]</li>
-            <li>Multicultural Alumni Network Scholarship (Carleton College) (2014)</li>
-            <li>HHMI Travel Award (Carleton College) (Nov 2014; Jun 2015) [cite: 80]</li>
+            <li>Robert M. Sandelman Awards for Scientific Excellence (2019) [cite: 78]</li>
+            <li>Farris Foundation Graduate Student Fellowship (2019) [cite: 78]</li>
+            <li>DeVos Professional Development Award (2017) [cite: 78]</li>
+            <li>Phi Beta Kappa Carleton College Chapter (2015) [cite: 78]</li>
+            <li>Sigma Xi Carleton College Chapter (2015) [cite: 78]</li>
+            <li>Annual Dean's List (Carleton College) (2012 - 2013) [cite: 78]</li>
+            <li>Dean’s Office Research Scholarship (Carleton College) (Mar, Nov 2014; Jun 2015) [cite: 78]</li>
+            <li>Multicultural Alumni Network Scholarship (Carleton College) (2014) [cite: 78]</li>
+            <li>HHMI Travel Award (Carleton College) (Nov 2014; Jun 2015) [cite: 78]</li>
         </ul>
     </section>
 
     <section class="section">
         <h2>PROFESSIONAL MEMBERSHIPS</h2>
         <ul>
-            <li>Psychonomic Society</li>
-            <li>Society for Behavioral Neuroscience (SBN)</li>
-            <li>Genetic Society of America (GSA)</li>
-            <li>International Behavioral Neuroscience Society (IBNS)</li>
+            <li>Psychonomic Society [cite: 79]</li>
+            <li>Society for Behavioral Neuroscience (SBN) [cite: 79]</li>
+            <li>Genetic Society of America (GSA) [cite: 79]</li>
+            <li>International Behavioral Neuroscience Society (IBNS) [cite: 79]</li>
         </ul>
     </section>
 
     <section class="section skills-section">
-        <h2>SKILLS</h2>
+        <h2>SKILLS 🛠️</h2>
         <ul>
-            <li><strong>Biostatistics & Data Analysis</strong>
+            <li><strong>Biostatistics & Data Analysis</strong> [cite: 80]
                 <ul>
-                    <li><u>Statistical Methods:</u> Experimental Design, Quantitative Behavior Analysis, Descriptive and Inferential Statistics (incl. linear/multivariate regression, Bayesian inference, PCA), Data Interpretation and Visualization.</li>
-                    <li><u>Statistical Software:</u> R, MATLAB, SPSS, GraphPad Prism, MS Excel.</li>
-                    <li><u>Biostatistics Knowledge:</u> Foundational understanding via graduate-level teaching assistance and research experience.</li>
+                    <li><u>Statistical Methods:</u> Experimental Design, Quantitative Behavior Analysis, Descriptive and Inferential Statistics (incl. linear/multivariate regression, Bayesian inference, PCA), Data Interpretation and Visualization. [cite: 80]</li>
+                    <li><u>Statistical Software:</u> R, MATLAB, SPSS, GraphPad Prism, MS Excel. [cite: 80]</li>
+                    <li><u>Biostatistics Knowledge:</u> Foundational understanding via graduate-level teaching assistance and research experience. [cite: 80]</li>
                 </ul>
             </li>
-            <li><strong>Programming & Software</strong>
+            <li><strong>Programming & Software</strong> [cite: 80]
                 <ul>
-                    <li><u>Programming Languages:</u> Python, Java, C++.</li>
-                    <li><u>Image Analysis and Data Visualization:</u> ImageJ, Adobe Creative Suite (Illustrator, Photoshop, InDesign), GIMP.</li>
-                    <li><u>Office Suite:</u> Microsoft Office Suite (Word, Excel, PowerPoint).</li>
+                    <li><u>Programming Languages:</u> Python, Java, C++. [cite: 80]</li>
+                    <li><u>Image Analysis and Data Visualization:</u> ImageJ, Adobe Creative Suite (Illustrator, Photoshop, InDesign), GIMP. [cite: 80]</li>
+                    <li><u>Office Suite:</u> Microsoft Office Suite (Word, Excel, PowerPoint). [cite: 80]</li>
                 </ul>
             </li>
-            <li><strong>Technical & Laboratory Skills</strong>
+            <li><strong>Technical & Laboratory Skills</strong> [cite: 80]
                 <ul>
-                    <li><u>Molecular Biology:</u> qRT-PCR, Western Blotting, SDS-PAGE, genotyping, DNA purification, plasmid design, immunochemistry, tissue preparation, cell culture, aseptic techniques, microscopy. [cite: 81]</li>
-                    <li><u>Genetic Engineering:</u> D. melanogaster genetics (GAL4/UAS, LexA/lexAop, FLPL/FRT, CRISPR/Cas9), M. musculus CRISPR/Cas9 and Cre/lox via viral injections. [cite: 82]</li>
+                    <li><u>Molecular Biology:</u> qRT-PCR, Western Blotting, SDS-PAGE, genotyping, DNA purification, plasmid design & construction, immunochemistry (IHC, ICC, IF), tissue preparation, cell culture (HEK293, CHO), aseptic techniques (E. coli, C. elegans), microscopy (confocal, brightfield, fluorescent). [cite: 80, 81, 82]</li>
+                    <li><u>Genetic Engineering:</u> D. melanogaster genetics (GAL4/UAS, LexA/lexAop, FLPL/FRT, CRISPR/Cas9), M. musculus CRISPR/Cas9 & Cre/lox via viral injections. [cite: 82]</li>
                     <li><u>Model Organisms:</u> M. musculus, R. norvegicus, D. melanogaster, C. elegans. [cite: 82]</li>
-                    <li><u>Rodent Techniques:</u> Husbandry, Behavioral Testing, Surgery (i.p., s.c., i.c. injections; ovariectomy; perfusion and brain extraction). [cite: 82]</li>
-                    <li><u>Human Studies:</u> Longitudinal data collection, RCTs, experimental design, statistical inference. [cite: 83]</li>
+                    <li><u>Rodent Techniques:</u> Husbandry, Behavioral Testing, Surgery (i.p., s.c., i.c. injections; ovariectomy; perfusion & brain extraction). [cite: 82]</li>
+                    <li><u>Human Studies:</u> Longitudinal data collection, RCTs, experimental design, statistical inference. [cite: 82]</li>
                 </ul>
             </li>
-            <li><strong>Research & Therapeutic Area Expertise</strong>
+            <li><strong>Research & Therapeutic Area Expertise</strong> [cite: 82]
                 <ul>
-                    <li><u>Neuroscience:</u> Clinical psychiatry, cognitive science, behavioral neuroscience, molecular biology, behavioral genetics. [cite: 83, 84]</li>
-                    <li><u>Metabolism & Physiology:</u> Food intake, energy expenditure, metabolic health, sleep, aging. [cite: 85]</li>
-                    <li><u>Assay Development:</u> Food intake assays, quantitative behavior assessment. [cite: 85]</li>
+                    <li><u>Neuroscience:</u> Clinical psychiatry, cognitive science, behavioral neuroscience, molecular biology, behavioral genetics. [cite: 82, 83]</li>
+                    <li><u>Metabolism & Physiology:</u> Food intake, energy expenditure, metabolic health, sleep, aging. [cite: 84]</li>
+                    <li><u>Assay Development:</u> Food intake assays, quantitative convulsive behavior assessment. [cite: 84]</li>
                 </ul>
             </li>
-             <li><strong>Project Management & Regulatory Compliance</strong>
+             <li><strong>Project Management & Regulatory Compliance</strong> [cite: 85]
                 <ul>
-                    <li><u>Project Leadership:</u> Research Associate Scientist / Lab Head experience. [cite: 86]</li>
-                    <li><u>Grant Writing & Management:</u> Initiated ETSP collaboration, submitted NIH R16. [cite: 87]</li>
-                    <li><u>Regulatory Compliance:</u> IRB & IACUC project management. [cite: 87]</li>
-                    <li><u>Mentoring & Training:</u> Experience with high school, undergraduate, and graduate students. [cite: 88]</li>
-                    <li><u>Team Leadership:</u> Guided graduate students through defense and publications. [cite: 88]</li>
+                    <li><u>Project Leadership:</u> Research Associate Scientist / Lab Head experience. [cite: 85]</li>
+                    <li><u>Grant Writing & Management:</u> Initiated ETSP collaboration, submitted NIH R16. [cite: 86]</li>
+                    <li><u>Regulatory Compliance:</u> IRB & IACUC project management. [cite: 86]</li>
+                    <li><u>Mentoring & Training:</u> Proven ability to advise high school, undergraduate, and graduate students. [cite: 87]</li>
+                    <li><u>Team Leadership:</u> Guided graduate students through defense and publications. [cite: 87]</li>
                 </ul>
             </li>
-             <li><strong>Communication & Collaboration</strong>
+             <li><strong>Communication & Collaboration</strong> [cite: 87]
                 <ul>
-                    <li><u>Scientific Writing:</u> Track record of peer-reviewed publications.</li>
-                    <li><u>Presentations:</u> International conferences and invited seminars.</li>
-                    <li><u>Cross-functional Collaboration:</u> Experience working with multiple PIs and institutions.</li>
-                    <li><u>Teaching & Course Support:</u> Developed materials and facilitated discussions. [cite: 89]</li>
+                    <li><u>Scientific Writing:</u> Track record of peer-reviewed publications. [cite: 87]</li>
+                    <li><u>Presentations:</u> International conferences and invited seminars. [cite: 87]</li>
+                    <li><u>Cross-functional Collaboration:</u> Experience working with multiple PIs and institutions. [cite: 87]</li>
+                    <li><u>Teaching & Course Support:</u> Developed materials and facilitated discussions. [cite: 87]</li>
                 </ul>
             </li>
         </ul>
     </section>
 
-    <section class="section">
+    <section class="section references">
         <h2>REFERENCES</h2>
         <div class="entry">
             <h3>Ken Dawson-Scully</h3>
-            <p>Professor; Senior Vice President / Associate Provost</p>
-            <p>Nova Southeastern University</p>
-            <p>3300 S. University Drive, Fort Lauderdale, FL 33328</p>
-            <p>954-262-7538 | dawsonscully@nova.edu</p>
-            <p><em>Relationship: Principal Investigator</em></p>
+            <p>Professor; Senior Vice President / Associate Provost [cite: 89]</p>
+            <p>Nova Southeastern University [cite: 89]</p>
+            <p>3300 S. University Drive, Fort Lauderdale, FL 33328 [cite: 89]</p>
+            <p>954-262-7538 | <a href="mailto:dawsonscully@nova.edu">dawsonscully@nova.edu</a> [cite: 89]</p>
+            <p><em>Relationship: Principal Investigator</em> [cite: 89]</p>
         </div>
         <div class="entry">
             <h3>William Ja</h3>
-            <p>Associate Professor</p>
-            <p>Herbert Wertheim UF Scripps Institute for Biomedical Innovation & Technology</p>
-            <p>130 Scripps Way</p>
-            <p>561-228-2956 | w.ja@ufl.edu</p>
-            <p><em>Relationship: Graduate Advisor</em></p>
+            <p>Associate Professor [cite: 89]</p>
+            <p>Herbert Wertheim UF Scripps Institute for Biomedical Innovation & Technology [cite: 89]</p>
+            <p>130 Scripps Way [cite: 89]</p>
+            <p>561-228-2956 | <a href="mailto:w.ja@ufl.edu">w.ja@ufl.edu</a> [cite: 89]</p>
+            <p><em>Relationship: Graduate Advisor</em> [cite: 89]</p>
         </div>
         <div class="entry">
             <h3>Eric Zorrilla, PhD</h3>
-            <p>Associate Professor</p>
-            <p>The Scripps Research Institute</p>
-            <p>10550 N. Torrey Pines Road, La Jolla, CA 92037</p>
-            <p>(858) 784-7416 | ezorrill@scripps.edu</p>
-            <p><em>Relationship: Course director</em></p>
+            <p>Associate Professor [cite: 89]</p>
+            <p>The Scripps Research Institute [cite: 89]</p>
+            <p>10550 N. Torrey Pines Road, La Jolla, CA 92037 [cite: 89]</p>
+            <p>(858) 784-7416 | <a href="mailto:ezorrill@scripps.edu">ezorrill@scripps.edu</a> [cite: 89]</p>
+            <p><em>Relationship: Course director</em> [cite: 89]</p>
         </div>
     </section>
 
